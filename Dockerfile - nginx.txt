@@ -1,5 +1,5 @@
 FROM nginx:latest
-MAINTAINER Alessandro Vicente <alessandroandromeda88@gmail.com>
+MAINTAINER Alessandro Cavalcante <ahcjunior2013@gmail.com>
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install nginx -y
 EXPOSE 80
