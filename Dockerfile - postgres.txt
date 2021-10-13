@@ -1,5 +1,5 @@
 FROM postgres:latest
-MAINTAINER Alessandro Vicente <alessandroandromeda88@gmail.com>
+MAINTAINER Alessandro Cavalcante <ahcjunior2013@gmail.com>
 RUN echo "host all  all    0.0.0.0/0  md5" >> /var/lib/postgresql/data/pg_hba.conf
 CMD ["postgres"]
 EXPOSE 5432
