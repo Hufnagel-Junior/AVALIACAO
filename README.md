@@ -40,9 +40,9 @@ POSTGRES_PORT = 5432
 
 1. Clone o repositório usando o comando:
 
-git clone  https://github.com/AlessandroVicent/Topico.git
+git clone https://github.com/Hufnagel-Junior/AVALIACAO.git
 
-2. Entre na pasta Topico e copie o arquivo env-example para .env.
+2. Entre na pasta AVALIACAO e copie o arquivo env-example para .env.
 
 cp env-example .env
 
