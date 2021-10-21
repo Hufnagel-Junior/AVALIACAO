@@ -1,5 +1,7 @@
 FROM postgres:latest
 MAINTAINER Alessandro Cavalcante <ahcjunior2013@gmail.com>
+RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
 RUN echo "host all  all    0.0.0.0/0  md5" >> /var/lib/postgresql/data/pg_hba.conf
-CMD ["postgres"]
 EXPOSE 5432
+VOLUME  ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
+CMD ["postgres"]
