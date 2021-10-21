@@ -16,10 +16,10 @@ Virtual Host: nginx/sites -> /etc/nginx/conf.d
 
 Criação do vhost modelo http://api.dev (vhost modificável)
 
-# Configuração do Container Postgresql
+# Postgresql
+Nessa etapa sera criado o Postgresql que é usado no Banco de Dados
 
-1. Exposição de porta:
-
+1. A porta que sera usada:
 5432
 
 2. Volume:
@@ -38,25 +38,26 @@ POSTGRES_PORT = 5432
 
 # Passo a Passo
 
-1. Clone o repositório usando o comando:
+I. Clone o repositório
+Para clonar o Repositorio do Git realize o seguinte comando:
 
 git clone https://github.com/Hufnagel-Junior/AVALIACAO.git
 
-2. Entre na pasta AVALIACAO e copie o arquivo env-example para .env.
+II. É necessario acessar a pasta AVALIACAO em seguida copiar o arquivo env-example para .env.
 
 cp env-example .env
 
-3. Rode seu container:
+III. Inicie seu container:
 
 docker-compose up -d
 
-4. Adicione os domínios no arquivo de hosts do windows.
+IV. Adicione os domínios no arquivo de hosts do windows.
 
 127.0.0.1 localhost
 
 127.0.0.1 api.dev
 
-5. Abra no navegador
+VI. Abra no navegador
 
 http://localhost
 
@@ -68,11 +69,11 @@ winpty docker exec -it nginx bash
 
 winpty docker exec -it postgresql bash
 
-7. Acessar o banco de dados dentro do container Postgresql
+VII. Acessar o banco de dados dentro do container Postgresql
 
 psql default default
 
-8. Comandos básicos para utilizar o banco de dados
+VIII. Comandos básicos para utilizar o banco de dados
 
 \l;
 
